@@ -19,5 +19,22 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
+        MainContent.Content = new LogginView();
     }
+
+    // private void AddTODOButton_Clik(object sender, RoutedEventArgs e)
+    // {
+    //     var todoText = ToDoInput.Text;
+    //     if (!string.IsNullOrWhiteSpace(todoText))
+    //     {
+    //         TextBlock todoItem = new TextBlock
+    //         {
+    //             Text = todoText,
+    //             Margin = new Thickness(10)
+    //         };
+    //
+    //         ToDoList.Children.Add(todoItem);
+    //         ToDoInput.Clear();
+    //     }
+    //}
 }
